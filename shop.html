@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itsnkubito-stores</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "HDU3s65lA8IEYcfNY",
+      });
+   })();
+</script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo1"> Itsnkubito </a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="shop.html">shop</a>
+        <!-- <a href="about.html">about</a> -->
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+   
+    </div>
+
+</header>
+
+<div class="heading">
+    <h1>Our Stores</h1>
+    <!-- <p> <a href="home.html">home >></a> contact </p> -->
+</div>
+
+<section class="products">
+
+    <h1 class="title"> our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+               <button class="order-btn">Order Now</button>  
+            </div>
+            
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$63.99</div>
+          
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$55.99</div>
+            
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$76.99</div>
+             
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$60.99</div>
+       
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$54.99</div>
+              
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>t-shirt</h3>
+                <div class="price">$78.99</div>
+         
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>scropion </h3>
+                <div class="price">$58.99</div>
+             
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <button class="order-btn">Order Now</button>  
+
+            </div>
+           
+            <div class="image">
+                <img src="image/download.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>hoodie
+                </h3>
+                <div class="price">$68.99</div>
+             
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Order Form</h2>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phonenumber">Phone number:</label>
+            <input type="text" id="phonenumber" name="phonenumber" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <label for="product">Product:</label>
+            <input type="text" id="product" name="product" readonly>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            
+            <input type="submit" value="Place Order" class="btn">
+        </form>
+    </div>
+</div>
+
+<!-- Modal structure -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+        <div class="box">
+            <h3>Keep in touch</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+            <img src="image/payment.png" class="payment" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">2024 all rights reserved!</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom css file link  -->
+<!-- <script src="js/script.js"></script> -->
+<script>
+    let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+
+}
+
+// Get modal elements
+var modal = document.getElementById("orderModal");
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Function to open modal
+document.querySelectorAll('.order-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        console.log("working");
+        
+        var productName = this.closest('.box').querySelector('h3').innerText;
+        document.getElementById('product').value = productName;
+        modal.style.display = "block";
+    });
+});
+
+// Function to close modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close modal if clicked outside of modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+<script type="text/javascript">
+document.getElementById('orderForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const product = document.getElementById('product').value;
+    const quantity = document.getElementById('quantity').value;
+    const phonenumber = document.getElementById('phonenumber').value;
+
+    console.log({ name, email, address, product, quantity, phonenumber }); // Debugging
+
+    emailjs.send("service_uazt02r", "template_mnv8en6", {
+        name,
+        email,
+        address,
+        product,
+        quantity,
+        phonenumber
+    }).then(function(response) {
+        alert('Order placed successfully!', response.status, response.text);
+
+        // Close the modal after successful order placement
+        var modal = document.getElementById('orderModal');
+        modal.style.display = "none";
+    }, function(error) {
+        alert('Failed to place order. Please try again.', error);
+    });
+});
+
+
+</script>
+</body>
+</html>
